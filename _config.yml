@@ -19,10 +19,6 @@ author:
 
 timezone: Etc/UTC
 
-collections:
-  staff_members:
-    _hide_content: true
-
 paginate: 10
 paginate_path: "/blog/:num/"
 permalink: pretty
@@ -56,7 +52,7 @@ defaults:
   - scope:
       path: "support.html"
     values:
-      full_width: true
+      layout: "page"
 
 jekyll-archives:
   enabled:
