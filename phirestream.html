@@ -1,0 +1,26 @@
+---
+title: Phirestream
+heading: Phirestream
+description: Redact PHI and PII from Apache Kafka data streams.
+faq:
+  - question: What types of payment do you accept?
+    answer: Credit cards including MasterCard, Visa or American Express.
+  - question: Can I change my plan at a later time?
+    answer: Yes, you can upgrade and downgrade your plan at anytime.
+  - question: Do you offer pricing for nonprofit organizations?
+    answer: Yes, send us a message and we'll set you up on our nonprofit pricing.
+  - question: Questions?
+    answer: Contact us for any further questions at <a href="#">john@business.com</a>.
+---
+
+{% if page.faq %}
+	<h3>Pricing FAQ</h3>
+	<dl class="faq">
+		{% for item in page.faq %}
+			<div>
+				<dt>{{ item.question }}</dt>
+				<dd>{{ item.answer }}</dd>
+			</div>
+		{% endfor %}
+	</dl>
+{% endif %}

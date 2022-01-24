@@ -1,5 +1,5 @@
 - links:
-  - name: Pricing
+  - name: Philter
     link: /pricing/
   - name: Blog
     link: /blog/
@@ -8,7 +8,7 @@
   - name: Contact
     link: /contact/
 - links:
-  - name: Login
+  - name: Phirewall
     link: /
     new_window: true
   - name: Sign Up
@@ -21,18 +21,18 @@
     link: /
     new_window: true
 - links:
-  - name: Facebook
-    link: https://facebook.com/cloudcannon/
+  - name: LinkedIn
+    link: https://www.linkedin.com/company/mountain-fog
     new_window: true
     social_icon: Facebook
   - name: Twitter
-    link: https://twitter.com/cloudcannon/
+    link: https://twitter.com/mtnfog/
     social_icon: Twitter
     new_window: true
-  - name: YouTube
-    link: https://youtube.com/cloudcannon/
-    social_icon: YouTube
+  - name: GitHub
+    link: https://www.github.com/mtnfog
     new_window: true
+    social_icon: Github
   - name: RSS
     link: /feed.xml
     social_icon: RSS

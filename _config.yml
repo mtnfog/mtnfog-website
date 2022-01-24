@@ -2,9 +2,9 @@
 # Site
 
 title: Mountain Fog
-url: "https://www.mtnfog.com"
+url: "https://dev.mtnfog.com"
 baseurl:
-google_analytics_key:
+google_analytics_key: UA-46627195-1
 google_maps_javascript_api_key:
 disqus_shortname:
 
@@ -12,9 +12,9 @@ disqus_shortname:
 logo: /siteicon.png
 description: Mountain fog website
 author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+  name: Mountain Fog Team
+  email: support@mtnfog.com
+  twitter: mtnfog
 social:
   name: Hydra Template
   links:
@@ -60,7 +60,7 @@ defaults:
     values:
       layout: "default"
   - scope:
-      path: "contact.html"
+      path: "support.html"
     values:
       full_width: true
 
@@ -86,14 +86,9 @@ exclude:
 
 _select_data:
   social_icons:
-    - Facebook
-    - Instagram
     - LinkedIn
-    - Pinterest
-    - Tumblr
     - Twitter
     - YouTube
-    - RSS
 
 _comments:
   map: Update the map location and display settings.
