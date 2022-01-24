@@ -5,12 +5,12 @@
 	background: $brand-color;
 	border-radius: 3px;
 	border: 1px solid rgba(255,255,255,.5);
-	transition: .2s ease-in-out;
+	//transition: .2s ease-in-out;
 }
 
 .button a:hover, input[type=submit]:hover {
-	border: 1px solid #fff;
-	background: $secondary-brand-color;
+	border: 1px solid $brand-color;
+	background: #303030; //$secondary-brand-color;
 	cursor: pointer;
 }
 

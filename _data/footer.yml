@@ -1,39 +1,27 @@
 - links:
-  - name: Philter
-    link: /pricing/
+  - name: Home
+    link: /
   - name: Blog
     link: /blog/
   - name: About
     link: /about/
-  - name: Contact
-    link: /contact/
 - links:
-  - name: Phirewall
-    link: /
-    new_window: true
-  - name: Sign Up
-    link: /
-    new_window: true
-  - name: Docs
-    link: /
-    new_window: true
-  - name: Status
-    link: /
-    new_window: true
+  - name: Philter
+    link: /philter/
+  - name: Phirestream
+    link: /phirestream/
+  - name: Support
+    link: /support/
 - links:
-  - name: LinkedIn
-    link: https://www.linkedin.com/company/mountain-fog
-    new_window: true
-    social_icon: Facebook
   - name: Twitter
     link: https://twitter.com/mtnfog/
     social_icon: Twitter
     new_window: true
+  - name: LinkedIn
+    link: https://www.linkedin.com/company/mountain-fog
+    new_window: true
+    social_icon: LinkedIn
   - name: GitHub
     link: https://www.github.com/mtnfog
     new_window: true
-    social_icon: Github
-  - name: RSS
-    link: /feed.xml
-    social_icon: RSS
-    new_window: false
+    social_icon: GitHub
