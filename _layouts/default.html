@@ -19,6 +19,37 @@
 			</script>
 			<script async src='https://www.google-analytics.com/analytics.js'></script>
 		{% endif %}
+		{% if jekyll.environment == 'production' %}
+		<!-- Twitter universal website tag code -->
+		<script>
+			!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+			},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+					a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+			// Insert Twitter Pixel ID and Standard Event data below
+			twq('init','o3s79');
+			twq('track','PageView');
+		</script>
+		<!-- End Twitter universal website tag code -->
+		<!-- Begin LinkedIn Insight tag -->
+		<script type="text/javascript">
+			_linkedin_partner_id = "41562";
+			window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+			window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+		</script><script type="text/javascript">
+		(function(l) {
+			if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+				window.lintrk.q=[]}
+			var s = document.getElementsByTagName("script")[0];
+			var b = document.createElement("script");
+			b.type = "text/javascript";b.async = true;
+			b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+			s.parentNode.insertBefore(b, s);})(window.lintrk);
+		</script>
+		<noscript>
+			<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=41562&fmt=gif" />
+		</noscript>
+		<!-- End LinkedIn Insight tag -->
+		{% endif %}
 	</head>
 	<body>
 		<header>
@@ -52,5 +83,6 @@
 				return false;
 			};
 		</script>
+		<script data-jsd-embedded data-key="c86b555d-d231-4f06-9dfc-788cd3db16c3" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
 	</body>
 </html>
