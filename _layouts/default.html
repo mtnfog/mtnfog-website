@@ -11,6 +11,9 @@
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://use.fontawesome.com/1d2b91dff9.js"></script>
+		<link href="/css/lightbox.css" rel="stylesheet" />
+		<script src="/js/lightbox.js"></script>
 
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 			<script>
@@ -38,10 +41,13 @@
 		{% endif %}
 		<header>
 			<div class="container">
-				<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/mtnfoglogo150x50.png" alt="Mountain Fog Logo" width="150" height="50" /></a></div>
+				<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/mtnfoglogo.png" alt="Mountain Fog Logo" /></a></div>
 				{% include navigation.html %}
 			</div>
 		</header>
+		<div class="banner">
+			Philter is a featured solution in the AWS Marketplace Healthcare Compliance category! <a href="#">Check it out!</a>
+		</div>
 		{{ content }}
 		<footer>
 			<div class="container">
@@ -59,6 +65,7 @@
 					{% endfor %}
 				</div>
 				<p class="copyright">&copy; {{ site.time | date: '%Y' }} Mountain Fog, Inc. • <a href="/terms">Terms of Use</a> | <a href="/privacy">Privacy Policy</a></p>
+				<p class="copyright">Mountain Fog, Philter, and Phirestream are registered trademarks of Mountain Fog, Inc.</p>
 			</div>
 		</footer>
 		<script>

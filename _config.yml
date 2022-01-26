@@ -5,6 +5,7 @@ title: Mountain Fog
 url: "https://dev.mtnfog.com"
 baseurl:
 google_analytics_key: UA-46627195-1
+links_philter_aws: https://aws.amazon.com/marketplace/pp/B07YVB8FFT?ref=_ptnr_mf_launch
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
