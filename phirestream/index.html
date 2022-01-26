@@ -40,6 +40,25 @@ clouds:
 	</section>
 </div>
 
+<table width="100%">
+	<tbody>
+	<tr>
+		<td><a href="http://aws.amazon.com/marketplace/pp/B09FFJQ2VP"><img style="object-fit:
+		contain" title="Launch Phirestream on Amazon Web Services via the AWS Marketplace" src="/images/aws.gif"
+																								alt="Launch Phirestream on Amazon Web Services via the AWS Marketplace" width="179" height="109" /></a></td>
+		<td><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mtnfog.phirestream?tab=Overview"><img
+				style="object-fit: contain" title="Launch Phirestream on Microsoft Azure via the Azure Marketplace"
+				src="/images/azure.png" alt="Launch Phirestream on Microsoft Azure via the Azure Marketplace" width="187"
+				height="35"
+		/></a></td>
+		<td><a href="https://console.cloud.google.com/marketplace/product/mountainfog-public/phirestream"><img
+				style="object-fit: contain" title="Launch Phirestream on Google Cloud via the Google Cloud Marketplace"
+				src="/images/google-cloud.jpg" alt="Launch Phirestream on Google Cloud via the Google Cloud Marketplace" width="300"
+				height="168" /></a></td>
+	</tr>
+	</tbody>
+</table>
+
 {% if page.faq %}
 	<h3>Phirestream FAQ</h3>
 	<dl class="faq">
@@ -51,16 +70,6 @@ clouds:
 		{% endfor %}
 	</dl>
 {% endif %}
-
-<h3>Phirestream in the Cloud</h3>
-<dl class="faq">
-	{% for item in page.clouds %}
-	<div>
-		<dt>{{ item.question }}</dt>
-		<dd>{{ item.answer }}</dd>
-	</div>
-	{% endfor %}
-</dl>
 
 <section class="testimonial">
 	<div class="container flex">

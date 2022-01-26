@@ -27,18 +27,37 @@ clouds:
 <div class="content">
 	<section>
 		<div class="container flex">
-			<div class="text editable">
+			<div class="text">
 				<h2>Redact PHI and PII from <strong>text and documents</strong></h2>
 				<p>Philter redacts PII and PHI from documents to help you maintain HIPAA compliance, meet industry regulations, and leverage your documents for valuable secondary purposes.</p>
 				<p>Philter features a redaction API that identifies and redacts PHI and PII from text and documents. Philter runs entirely in your own cloud. Your data never leaves your network.</p>
 				<a href="https://philter.mtnfog.com/introduction/quick-start">Quick Start</a> | <a href="https://philter.mtnfog.com">User's Guide</a> | <a href="/philter/release-notes">Release Notes</a>
 			</div>
 			<div class="image">
-				<img src="{{ site.baseurl }}/images/dashboard.png" alt="Screenshot" class="screenshot editable" />
+				<img src="{{ site.baseurl }}/images/dashboard.png" alt="Screenshot" class="screenshot" />
 			</div>
 		</div>
 	</section>
 </div>
+
+<table width="100%">
+	<tbody>
+	<tr>
+		<td><a href="https://aws.amazon.com/marketplace/pp/B07YVB8FFT?ref=_ptnr_mf_launch"><img style="object-fit:
+		contain" title="Launch Philter on Amazon Web Services via the AWS Marketplace" src="/images/aws.gif"
+																								alt="Launch Philter on Amazon Web Services via the AWS Marketplace" width="179" height="109" /></a></td>
+		<td><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mtnfog.philter"><img
+				style="object-fit: contain" title="Launch Philter on Microsoft Azure via the Azure Marketplace"
+				src="/images/azure.png" alt="Launch Philter on Microsoft Azure via the Azure Marketplace" width="187"
+				height="35"
+		/></a></td>
+		<td><a href="https://console.cloud.google.com/marketplace/details/mountainfog-public/philter"><img
+				style="object-fit: contain" title="Launch Philter on Google Cloud via the Google Cloud Marketplace"
+				src="/images/google-cloud.jpg" alt="Launch Philter on Google Cloud via the Google Cloud Marketplace" width="300"
+				height="168" /></a></td>
+	</tr>
+	</tbody>
+</table>
 
 {% if page.faq %}
 	<h3>Philter FAQ</h3>
@@ -51,16 +70,6 @@ clouds:
 		{% endfor %}
 	</dl>
 {% endif %}
-
-<h3>Philter in the Cloud</h3>
-<dl class="faq">
-	{% for item in page.clouds %}
-	<div>
-		<dt>{{ item.question }}</dt>
-		<dd>{{ item.answer }}</dd>
-	</div>
-	{% endfor %}
-</dl>
 
 <section class="testimonial">
 	<div class="container flex">
