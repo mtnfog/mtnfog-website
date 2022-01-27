@@ -1,3 +1,4 @@
 #!/bin/bash
 
+JEKYLL_ENV=production bundle exec jekyll build
 aws s3 sync ./_site/ s3://mtnfog-websites/mtnfog.com/ --delete
