@@ -5,58 +5,48 @@ featured_image: /images/mtnfog.png
 heading: About Mountain Fog
 ---
 
-<script>
-	function submitToAPI(e) {
-		e.preventDefault();
-		var URL = "https://j3w131ars6.execute-api.us-east-1.amazonaws.com/mtnfog-website-contact-form";
-
-		var name = $("#name-input").val();
-		var phone = $("#phone-input").val();
-		var email = $("#email-input").val();
-		var desc = $("#description-input").val();
-		var data = {
-			name : name,
-			phone : phone,
-			email : email,
-			desc : desc
-		};
-
-		$.ajax({
-			type: "POST",
-			url : URL,
-			dataType: "json",
-			crossDomain: "true",
-			contentType: "application/json; charset=utf-8",
-			data: JSON.stringify(data),
-
-			success: function () {
-				// clear form and show a success message
-				alert("Successfull");
-				document.getElementById("contact-form").reset();
-				location.reload();
-			},
-			error: function () {
-				// show an error message
-				alert("UnSuccessfull");
-			}});
-	}
-</script>
-
-<div class="content">
-
-		<div class="contact-details">
-			<p>Mountain Fog provides software and consulting services around the intersections of cloud computing, big-data, and natural language processing (NLP). Our software to redact text and documents is used by customers worldwide in a variety of industries such as healthcare, insurance, financial, and legal. Our customers range from small businesses to large enterprises.</p>
-
-			<p>We welcome you to connect with us on LinkedIn and to follow us on Twitter. For technical support contact information please visit our <a href="/support">support resources</a>.</p>
-
-			<h3>Partnerships and Affiliations</h3>
-			<p>We partner with resellers and consulting companies to distribute our products. We place a high value on our partnerships because of the benefit to the customer and their level of satisfaction. We are always open to exploring new partnerships, and especially open to establishing new partnerships with AWS Consulting Partners for the AWS Marketplace Consulting Partner Private Offers (CPPO).</p>
-
+<section>
+	<div class="container flex">
+		<div class="image">
+			<p style="text-align: center"><a href="mailto:hello@mtnfog.com">hello@mtnfog.com</a></p>
+			<p style="text-align: center">Ph. (304) 919-2800</p>
+			<p style="text-align: center">Fax (304) 919-2800</p>
+		</div>
+		<div class="text">
+			<h2>About Us</h2>
+			<p>Mountain Fog provides software and consulting services around the intersections of cloud computing, big-data, and natural language processing (NLP).</p>
+			<p>Our software to redact text and documents is used by customers worldwide in a variety of industries such as healthcare, insurance, financial, and legal. Our customers range from small businesses to large enterprises.</p>
+		</div>
 	</div>
+</section>
 
-</div>
+<section>
+	<div class="container flex">
+		<div class="image">
+			<img src="{{ site.baseurl }}/images/social-media.jpg" alt="Connect with us on social media." title="Connect with us on social media." />
+		</div>
+		<div class="text">
+			<h2>Connect With Us</h2>
+			<p>We welcome you to connect with us on <a href="https://www.linkedin.com/company/mountain-fog">LinkedIn</a> and to follow us on <a href="https://www.twitter.com/mtnfog">Twitter</a>.</p>
+			<p>For technical support contact information please visit our <a href="/support">support resources</a>.</p>
+		</div>
+	</div>
+</section>
 
-<section class="contactus">
+<section>
+	<div class="container flex">
+		<div class="image">
+			<img src="{{ site.baseurl }}/images/philter-logo-transparent.png" alt="We value our partners and relationships." title="We value our partners and relationships." />
+		</div>
+		<div class="text">
+			<h2>Partnerships</h2>
+			<p>We partner with resellers and consulting companies to distribute our products. We place a high value on our partnerships because of the benefit to the customer and their level of satisfaction.</p>
+			<p>We are always open to exploring new partnerships, and especially open to establishing new partnerships with AWS Consulting Partners for the AWS Marketplace Consulting Partner Private Offers (CPPO).</p>
+		</div>
+	</div>
+</section>
+
+<!--<section class="contactus">
 	<div class="container">
 
 		<h3>Contact Us</h3>
@@ -70,9 +60,9 @@ heading: About Mountain Fog
 				<input type="email" style="height:35px;" id="email-input" placeholder="Enter email here…" class="form-control" style="width:100%;"/><br/>
 				<h4>How can we help you?</h4>
 				<textarea id="description-input" rows="3" placeholder="Enter your message…" class="form-control" style="width:100%;"></textarea><br/>
-				<!--<div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>-->
+				<div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>
 				<button type="button" onClick="submitToAPI(event)" class="btn btn-lg" style="margin-top:20px;">Submit</button>
 			</form>
 
 	</div>
-</section>
+</section>-->
