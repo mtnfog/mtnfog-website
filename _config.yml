@@ -31,7 +31,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-gist
-  - jekyll-youtube
 
 exclude:
   - Gemfile
