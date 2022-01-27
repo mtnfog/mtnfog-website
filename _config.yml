@@ -5,8 +5,6 @@ title: Mountain Fog
 url: "http://stage.mtnfog.com"
 baseurl:
 locale: en_US
-google_analytics_key: UA-46627195-1
-google_site_verification:
 links_philter_aws: https://aws.amazon.com/marketplace/pp/B07YVB8FFT?ref=_ptnr_mf_launch
 
 # jekyll-seo-tag - https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
