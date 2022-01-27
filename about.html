@@ -76,3 +76,8 @@ heading: About Mountain Fog
 
 	</div>
 </section>
+
+
+{% for tweet in page.tweets %}
+{% twitter tweet align=right width=350 %}
+{% endfor %}
