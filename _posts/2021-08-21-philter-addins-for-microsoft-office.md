@@ -1,6 +1,7 @@
 ---
 date: 2011-08-21
 title: New! Philter Add-Ins for Microsoft Office
+layout: post
 categories:
   - philter
   - aws
@@ -9,7 +10,7 @@ redirect_from: /blog/new-philter-add-ins-for-microsoft-office/
 
 We are very excited to announce the new Philter Add-Ins for Microsoft Office! These add-ins bring Philter’s redaction capabilities directly into your Microsoft Word documents and Microsoft Excel spreadsheets. With these add-ins you can redact or highlight PHI, PII, and other sensitive information in your documents and spreadsheets with a single click. The Philter Add-Ins for Microsoft Office provide a great leap forward in streamlining document redaction.
 
-<i class="fa fa-download"> <a href="https://www.mtnfog.com/products/philter/office-add-ins/">Download or learn more about the add-ins</a>
+{% fa_svg fab.fa-download %} <a href="https://www.mtnfog.com/products/philter/office-add-ins/">Download or learn more about the add-ins</a>
 
 <a href="/images/blog/philter-word-addin-screenshot.png" data-lightbox="image-1" data-title="Philter Add-Ins for Microsoft Office">
 <img src="/images/blog/philter-word-addin-screenshot.png" title="HIPAA Reference Architecture with Philter" data-lightbox="image-1" data-title="Philter Add-Ins for Microsoft Office">

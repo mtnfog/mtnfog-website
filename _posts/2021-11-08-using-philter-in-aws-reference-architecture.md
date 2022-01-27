@@ -1,6 +1,7 @@
 ---
 date: 2011-11-08
 title: Using Philter in the AWS Reference Architecture for HIPAA
+layout: post
 categories:
   - philter
   - aws
