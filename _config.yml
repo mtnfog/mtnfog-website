@@ -31,7 +31,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-gist
   - jekyll-youtube
-  - jekyll-fontawesome-svg
 
 exclude:
   - Gemfile

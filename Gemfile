@@ -11,5 +11,4 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from', '~> 0.16.0'
   gem 'jekyll-gist'
   gem 'jekyll-youtube'
-  gem 'jekyll-fontawesome-svg'
 end
