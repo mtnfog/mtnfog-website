@@ -7,9 +7,9 @@ categories:
   - aws
 ---
 
-<p style="text-align: center"><img src="/images/philter-logo-transparent.png" style="object-fit: contain; width:50%;height:50%;"></p>
-
 We are excited to share the Philter is now a featured product in the <a href="https://aws.amazon.com/marketplace/solutions/healthcare/healthcare-compliance">AWS Marketplace's Healthcare Compliance</a> category.
+
+<p style="text-align: center"><img src="/images/philter-logo-transparent.png" style="object-fit: contain; width:50%;height:50%;"></p>
 
 The products selected for this feature "help ensure that IT infrastructure is compliant with changing policies and regulations, allowing teams to focus on driving patient-centeric innovation."
 
