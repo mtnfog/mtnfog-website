@@ -4,6 +4,7 @@ title: New! Philter Add-Ins for Microsoft Office
 categories:
   - philter
   - aws
+redirect_from: /blog/new-philter-add-ins-for-microsoft-office/
 ---
 
 We are very excited to announce the new Philter Add-Ins for Microsoft Office! These add-ins bring Philter’s redaction capabilities directly into your Microsoft Word documents and Microsoft Excel spreadsheets. With these add-ins you can redact or highlight PHI, PII, and other sensitive information in your documents and spreadsheets with a single click. The Philter Add-Ins for Microsoft Office provide a great leap forward in streamlining document redaction.

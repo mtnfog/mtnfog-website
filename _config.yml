@@ -2,7 +2,7 @@
 # Site
 
 title: Mountain Fog
-url: "https://dev.mtnfog.com"
+url: "http://stage.mtnfog.com"
 baseurl:
 google_analytics_key: UA-46627195-1
 links_philter_aws: https://aws.amazon.com/marketplace/pp/B07YVB8FFT?ref=_ptnr_mf_launch
@@ -65,6 +65,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-redirect-from
 
 exclude:
   - Gemfile
