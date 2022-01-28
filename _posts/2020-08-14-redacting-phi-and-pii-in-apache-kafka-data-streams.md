@@ -12,7 +12,7 @@ Apache Kafka can be found in virtually every industry today. Its ability to scal
 
 If you are ingesting streaming patient data you may need to redact sensitive information, like patient names and birthdates, in the text. Redacting sensitive information from the streaming data can help protect a pipeline against inadvertent exposure of PHI and PII and it could help get the data into a format so it can be used for secondary purposes, such as training a machine learning model.
 
-<h2>Phirestream</h2>
+# Phirestream
 
 <img src="/images/phirestream-logo-transparent.png">
 
@@ -20,7 +20,7 @@ If you are ingesting streaming patient data you may need to redact sensitive inf
 
 You can configure Phirestream to redact the types of PHI and PII you need, such as person’s names, ages, dates, zip codes, and more. You can choose to simply redact each instance of PHI and PII or you can encrypt, anonymize, or randomize the values. Phirestream gives you complete control over how your streaming data is to be redacted.
 
-<h3>Using Phirestream</h3>
+## Using Phirestream
 
 Here’s how to use Phirestream. In the example curl request below we are sending a small piece of text to Phirestream for redaction.
 
@@ -58,6 +58,6 @@ The output of this command will be the redacted text:
 {% endraw %}
 ```
 
-<h3>Filter Profiles</h3>
+## Filter Profiles
 
 The types of sensitive information that are identified by Phirestream are defined in files called filter profiles. A filter profile specifies the types of sensitive information and how to redact those types. Phirestream selects which filter profile to apply based on the name of the Apache Kafka topic. In the example above, the topic name was default so the filter profile named default was applied. Learn more about filter profiles.
