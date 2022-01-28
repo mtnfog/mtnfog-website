@@ -35,7 +35,7 @@ Be sure to change the endpoint to the endpoint of your running Philter instance.
 FilterResponse response = client.filter("George Washington was president.");
 ```
 
-The text parameter will be sent to Philter for redaction. The returned object will contain a value that is the redacted text. With the default settings, that return value will be {{{REDACTED-ner}}} was president.
+The text parameter will be sent to Philter for redaction. The returned object will contain a value that is the redacted text. With the default settings, that return value will be <code>{% raw %}{{{REDACTED-ner}}}{% endraw %}</code> was president.
 
 If you want to get more details of what happened you can use the explain function instead.
 
