@@ -60,18 +60,6 @@ clouds:
 	</tbody>
 </table>
 
-{% if page.faq %}
-	<h3>Phirestream FAQ</h3>
-	<dl class="faq">
-		{% for item in page.faq %}
-			<div>
-				<dt>{{ item.question }}</dt>
-				<dd>{{ item.answer }}</dd>
-			</div>
-		{% endfor %}
-	</dl>
-{% endif %}
-
 <div class="content">
 	<section>
 		<div class="container flex">
@@ -85,6 +73,59 @@ clouds:
 		</div>
 	</section>
 </div>
+
+<div class="content">
+	<section>
+		<div class="container flex">
+			<div class="text">
+				<h2>Phirestream runs in <strong>your cloud</strong></h2>
+				<p>Phirestream runs in your cloud for optimal data security. Your data never leaves your cloud. It's your data - keep it away from third parties.</p>
+			</div>
+			<div class="image">
+				<img src="{{ site.baseurl }}/images/cloud.png" alt="Phirestream runs entirely within your own cloud for maximum data security." title="Phirestream runs entirely within your own cloud for maximum data security." class="screenshot" />
+			</div>
+		</div>
+	</section>
+</div>
+
+<section>
+	<div class="container flex">
+		<div class="text">
+			<h2>Contact us for a <strong>free</strong> consultation</h2>
+			<p>Have questions? Want to see a demo? Use this form to request some no-cost time to chat about your redaction needs.</p>
+		</div>
+		<div class="image">
+			<form
+					action="https://formspree.io/f/mrgjpqgd"
+					method="POST"
+			>
+				<label>
+					Your name:
+					<input type="text" name="name">
+				</label>
+				<label>
+					Your email:
+					<input type="email" name="_replyto">
+				</label>
+				<input type="hidden" name="location" value="phirestream"/>
+				<br/>
+				<button type="submit">Send</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+{% if page.faq %}
+<h3>Phirestream FAQ</h3>
+<dl class="faq">
+	{% for item in page.faq %}
+	<div>
+		<dt>{{ item.question }}</dt>
+		<dd>{{ item.answer }}</dd>
+	</div>
+	{% endfor %}
+</dl>
+{% endif %}
 
 <table width="100%">
 	<tbody>
@@ -104,17 +145,3 @@ clouds:
 	</tr>
 	</tbody>
 </table>
-
-<div class="content">
-	<section>
-		<div class="container flex">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/cloud.png" alt="Phirestream runs entirely within your own cloud for maximum data security." title="Phirestream runs entirely within your own cloud for maximum data security." class="screenshot" />
-			</div>
-			<div class="text">
-				<h2>Phirestream runs in <strong>your cloud</strong></h2>
-				<p>Phirestream runs in your cloud for optimal data security. Your data never leaves your cloud. It's your data - keep it away from third parties.</p>
-			</div>
-		</div>
-	</section>
-</div>

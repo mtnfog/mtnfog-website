@@ -43,13 +43,26 @@ layout: default
 	<section>
 		<div class="container flex">
 			<div class="text">
-				<h2>Power and Control</h2>
-				<p>Both Philter and Phirestream feature powerful redaction capabilities utilizing state of the art natural language processing, customizable logic, and full control over the redaction process.</p>
-				<br/>
-				<div class="button"><a href="/compare">Compare Philter and Phirestream</a></div>
+				<h2>Contact us for a <strong>free</strong> consultation</h2>
+				<p>Have questions? Want to see a demo? Use this form to request some no-cost time to chat about your redaction needs.</p>
 			</div>
 			<div class="image">
-				<img src="{{ site.baseurl }}/images/patient_information.jpg" alt="Philter and Phiresream can be customized to redact specific types of information." title="Philter and Phiresream can be customized to redact specific types of information." class="screenshot" />
+				<form
+						action="https://formspree.io/f/mrgjpqgd"
+						method="POST"
+				>
+					<label>
+						Your name:
+						<input type="text" name="name">
+					</label>
+					<label>
+						Your email:
+						<input type="email" name="_replyto">
+					</label>
+					<input type="hidden" name="location" value="homepage"/>
+					<br/>
+					<button type="submit">Send</button>
+				</form>
 			</div>
 		</div>
 	</section>
