@@ -172,3 +172,21 @@ blockquote:before {
 	}
 
 }
+
+.documentation {
+	background: #fff;
+	padding: 1px 0 0 0;
+	position: relative;
+	h2 {
+		text-align: left;
+	}
+}
+
+.documentation .menu {
+
+}
+
+.documentation-header h2 {
+	color: #000000;
+	text-align: left;
+}
