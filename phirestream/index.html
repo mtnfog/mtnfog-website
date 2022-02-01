@@ -95,21 +95,25 @@ clouds:
 			<p>Have questions? Want to see a demo? Use this form to request some no-cost time to chat about your redaction needs.</p>
 		</div>
 		<div class="image">
-			<form
-					action="https://formspree.io/f/mrgjpqgd"
-					method="POST"
-			>
-				<label>
-					Your name:
-					<input type="text" name="name">
-				</label>
-				<label>
-					Your email:
-					<input type="email" name="_replyto">
-				</label>
-				<input type="hidden" name="location" value="phirestream"/>
-				<br/>
-				<button type="submit">Send</button>
+			<form action="https://www.mtnfog.com/cgi-bin/mail.cgi" method="post">
+				<div align="center">
+					<table cellpadding="3" cellspacing="3" border="0"><tr>
+
+						<td align="right">Name:</td>
+						<td align="left">
+							<input type="text" name="name" size="30" maxlength="50">
+						</td></tr><tr>
+
+						<td align="right">Email:</td><td align="left">
+						<input type="text" name="email" size="30" maxlength="50">
+					</td></tr><tr>
+
+						<td align="center" colspan="2">
+							<input class="button" type="submit" name="submit" value="Send">
+						</td></tr>
+
+					</table>
+				</div>
 			</form>
 		</div>
 	</div>
