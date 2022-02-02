@@ -1,0 +1,107 @@
+---
+title: Philter Documentation
+layout: page
+---
+
+<div class="documentation">
+
+	<table width="100%" cellpadding="10">
+		<tr valign="top">
+			<td style="width: 300px">
+				{% include_relative nav.html %}
+			</td>
+			<td>
+				<h2 class="documentation-header">Applicability to PHI and PII</h2>
+				<p>Philter has many predefined types of sensitive information that can be identified. The individual types are described below.</p>
+				<p>Personally identifiable information (PII) is any information that could potentially be used to identify a specific person.</p>
+				<p>Protected health information (PHI) is any information about health status, provision of health care, or payment for health care that can be linked to an individual. The Health Insurance Portability And Accountability Act (HIPAA) defines 18 types of PHI.</p>
+
+				<h3>Predefined Types of PII and PHI</h3>
+				<p>The types of sensitive information that Philter will identify is customizable. For example, if you are not interested in VIN numbers you can have Philter ignore them. This configuration is performed through Filter Profiles.</p>
+				<p>Because Philter only operates on text, the biometric identifiers and face images outlined in the HIPAA regulations as PHI are not applicable to Philter. The types of sensitive information and how Philter identifies each one is listed in the table below.</p>
+
+				​
+				Type of PHI
+				How Philter Identifies It
+				1
+				Names
+				Ex: John Smith, Jane Doe
+				Philter identifies names in natural language text using state of the art machine learning algorithms and natural language processing techniques to identify named-person entities.
+				Philter also uses common first name and surname dictionaries with spellcheck capability to identify common names per the US census.
+				2
+				All geographical identifiers smaller than a state, except for the initial three digits of a zip code if, according to the current publicly available data from the U.S. Bureau of the Census: the geographic unit formed by combining all zip codes with the same three initial digits contains more than 20,000 people; and the initial three digits of a zip code for all such geographic units containing 20,000 or fewer people is changed to 000
+				Ex: 85055, 90213-1544
+				Philter can identify many US cities, US counties, and all US states (full names and abbreviations).
+				Philter uses a dictionary with spelling correction to identify misspelled locations.
+				Filter conditions in filter profiles can be used to apply logic based on zip code population according to the US census. (Filter strategies can truncate the zip code.)
+				Philter also uses state of the art machine learning algorithms and natural language processing techniques to identify locations.
+				Philter includes a dictionary of some hospital locations to quickly identify medical locations.
+				3
+				Dates (other than year) directly related to an individual
+				Ex: 10-10-2000. 10/10/2000, October 10, 2000
+				Philter can identify dates in many formats such as with hypens (10-10-2000), with slashes (10/10/2000), or spelled out (May 1, 2000).
+				Philter can also identify ages, e.g. 57 years, 57yrs.
+				4
+				Phone Numbers
+				Ex: (304) 555-5555, 304-555-5555, 1-800-123-4567
+				Philter can identify phone numbers in many formats. (Philter is currently limited to US phone numbers.)
+				5
+				Fax numbers
+				Ex: (304) 555-5555, 304-555-5555, 1-800-123-4567
+				Philter can identify fax numbers in many formats. (Philter is currently limited to US phone numbers.)
+				6
+				Email addresses
+				Ex: john.fake.address@hotmail.com
+				Philter can identify email addresses per the email standard (summarized on ).
+				7
+				Social Security numbers
+				Ex: 123-45-6789, 123456789
+				Philter can identify social security numbers (SSNs) in multiple formats such as with spaces and hyphens.
+				8
+				Medical record numbers
+				Ex: 86637729, AB473-6021, 473-6AB021
+				Philter can identify alphanumeric identifiers.
+				9
+				Health insurance beneficiary numbers
+				Ex: 86637729, AB473-6021, 473-6AB021
+				Philter can identify alphanumeric identifiers.
+				10
+				Account numbers
+				Ex: 86637729, AB473-6021, 473-6AB021
+				Philter can identify alphanumeric identifiers, as well as credit card numbers from all major types of credit cards.
+				11
+				Certificate/license numbers
+				Ex: 86637729, AB473-6021, 473-6AB021
+				Philter can identify alphanumeric identifiers.
+				12
+				Vehicle identifiers and serial numbers, including license plate numbers
+				Ex: WBAPM7G50ANL19218, 1GBJC34K3RE176005
+				Philter can identify vehicle serial numbers (17-character VIN numbers). License plates will be identified as alphanumeric identifiers.
+				13
+				Device identifiers and serial numbers
+				Ex: H3SNPUHYEE7JD3H, 33778376
+				Philter can identify alphanumeric identifiers.
+				14
+				Web Uniform Resource Locators (URLs)
+				Ex: myhomepage.com, http://myhomepage.com/folder/page.html, www.myhomepage.com/folder/page.html
+				Philter can identify URLs adhering to the URL naming standard.
+				15
+				Internet Protocol (IP) address numbers
+				Ex: 127.0.0.1, 192.168.3.58, 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+				Philter can identify IPv4 and IPv6 addresses.
+				16
+				Biometric identifiers, including finger, retinal and voice prints
+				Not applicable – Philter only identifies PHI in text.
+				17
+				Full face photographic images and any comparable images
+				Not applicable – Philter only identifies PHI in text.
+				18
+				Any other unique identifying number, characteristic, or code except the unique code assigned by the investigator to code the data
+				Ex: 86637729, AB473-6021, 473-6AB021
+				Philter can identify alphanumeric identifiers
+
+			</td>
+		</tr>
+	</table>
+
+</div>

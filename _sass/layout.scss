@@ -182,11 +182,13 @@ blockquote:before {
 	}
 }
 
-.documentation .menu {
-
-}
-
 .documentation-header h2 {
 	color: #000000;
 	text-align: left;
+}
+
+.documentation .nav {
+	p {
+		font-size: 10px;
+	}
 }
