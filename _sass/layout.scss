@@ -211,13 +211,7 @@ blockquote:before {
 	text-align: left;
 }
 
-/* For all <code> */
-code {
-	font-family: MyFancyCustomFont, monospace;
-	font-size: inherit;
-}
-
-pre {
+.documentation pre {
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 95%;
 	line-height: 140%;
@@ -225,23 +219,6 @@ pre {
 	white-space: pre-wrap;
 	white-space: -moz-pre-wrap;
 	white-space: -o-pre-wrap;
-}
-
-code {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	font-size: 95%;
-	line-height: 140%;
-	white-space: pre;
-	white-space: pre-wrap;
-	white-space: -moz-pre-wrap;
-	white-space: -o-pre-wrap;
-	background: #faf8f0;
-}
-
-#content code {
-	display: block;
-	padding: 0.5em 1em;
-	border: 1px solid #bebab0;
 }
 
 .isa_info, .isa_success, .isa_warning, .isa_error {
@@ -265,3 +242,4 @@ code {
 	color: #D8000C;
 	background-color: #FFD2D2;
 }
+
