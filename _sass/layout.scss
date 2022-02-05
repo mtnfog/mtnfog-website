@@ -174,21 +174,72 @@ blockquote:before {
 }
 
 .documentation {
-	background: #fff;
-	padding: 1px 0 0 0;
-	position: relative;
-	h2 {
-		text-align: left;
-	}
+	margin-bottom: 0;
+	padding-bottom: 80px;
 }
+
+.documentation ul {
+	font-size: 14pt;
+	font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+	font-weight: 300;
+}
+
+.documentation li {
+	font-size: 14pt;
+	margin: 10px 0;
+	font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+	font-weight: 300;
+	color: #666;
+}
+
+.documentation p {
+	font-size: 14pt;
+}
+
+.documentation h2 {
+	text-align: left;
+}
+
+//.documentation {
+//	background: #fff;
+//	padding: 1px 0 0 0;
+//	position: relative;
+//}
 
 .documentation-header h2 {
 	color: #000000;
 	text-align: left;
 }
 
-.documentation .nav {
-	p {
-		font-size: 10px;
-	}
+/* For all <code> */
+code {
+	font-family: MyFancyCustomFont, monospace;
+	font-size: inherit;
+}
+
+pre {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 95%;
+	line-height: 140%;
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+}
+
+code {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 95%;
+	line-height: 140%;
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	background: #faf8f0;
+}
+
+#content code {
+	display: block;
+	padding: 0.5em 1em;
+	border: 1px solid #bebab0;
 }
