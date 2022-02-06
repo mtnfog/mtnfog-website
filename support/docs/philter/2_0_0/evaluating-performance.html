@@ -11,7 +11,11 @@ layout: documentation
 				{% include_relative nav.html %}
 			</td>
 			<td>
-				<h2 class="documentation-header">Upgrading</h2>
+				<h2 class="documentation-header">Evaluating Performance</h2>
+
+                <div class="isa_info">
+                    <p><i class="fa fa-info-circle"></i> For "performance", we mean in terms of how long does each redaction request take, and how much of the PHI/PII is redacted.</p>
+                </div>
 
                 <p>A common question we receive is how well does Philter perform? Our answer to this question is probably less than satisfactory because it simply depends. What does it depend on? Philter's performance is heavily dependent upon your individual data. Sharing to compare metrics of Philter's performance between different customer datasets is like comparing apples and oranges.
                 <p>If your data is not exactly like another customer's data then the metrics will not be applicable to your data. In terms of the classic information retrieval metrics precision and recall, comparing these values between customers can give false impressions about Philter's performance, both good and bad.
