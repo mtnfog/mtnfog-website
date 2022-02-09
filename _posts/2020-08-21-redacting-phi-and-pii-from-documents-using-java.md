@@ -1,5 +1,5 @@
 ---
-date: 2011-08-21
+date: 2020-08-21
 title: Redacting PHI and PII from Documents using Java
 layout: post
 categories:
