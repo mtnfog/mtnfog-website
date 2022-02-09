@@ -14,9 +14,14 @@
 		<script src="https://use.fontawesome.com/1d2b91dff9.js"></script>
 		<link href="/css/lightbox.css" rel="stylesheet" />
 		<script src="/js/lightbox.js"></script>
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+
+		<!-- Highlight JS -->
+		<!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">-->
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+		<script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css"></script>
 		<script>hljs.highlightAll();</script>
+		<script>hljs.addPlugin(new CopyButtonPlugin());</script>
 
 		{% if jekyll.environment == 'production' %}
 		<!-- Google Tag Manager -->

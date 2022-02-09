@@ -52,7 +52,7 @@ layout: documentation
 
                 <h3>Creating a Filter Profile</h3>
                 <p>Make a copy of the default filter profile and we will modify the copy for our needs.</p>
-                <code>cp /opt/philter/profiles/default.json /opt/philter/profiles/evaluation.json</code>
+                <pre><code class="bash">cp /opt/philter/profiles/default.json /opt/philter/profiles/evaluation.json</code></pre>
                 <p>Now open <code>/opt/philter/profiles/evaluation.json</code> in a text editor. (The content of <code>evaluation.json</code> will be similar to what's shown below but may have minor differences between different versions of Philter.)</p>
 
 {% raw %}
@@ -148,7 +148,7 @@ layout: documentation
                 <h3>Submitting Text for Redaction</h3>
                 <p>With our filter profile in place we can now send text to Philter for redaction using that profile:</p>
 
-                <code>curl -k -X POST "https://localhost:8080/api/filter?p=evaluation" -d @file.txt -H "Content-Type: text/plain"</code>
+                <pre><code class="bash">curl -k -X POST "https://localhost:8080/api/filter?p=evaluation" -d @file.txt -H "Content-Type: text/plain"</code></pre>
 
                 <p>In the command above, we are sending the file file.txt to Philter. The ?p=evaluation tells Philter to apply the evaluation filter profile that we have been editing. Philter's response to this command will be the redacted contents of file.txt as defined in the filter profile.</p>
 
@@ -162,7 +162,7 @@ layout: documentation
 
                 <p>Let's resubmit the file to Philter but instead this time use the explain API endpoint:</p>
 
-                <code>curl -k -X POST "https://localhost:8080/api/explain?p=evaluation" -d @file.txt -H "Content-Type: text/plain"</code>
+                <pre><code class="bash">curl -k -X POST "https://localhost:8080/api/explain?p=evaluation" -d @file.txt -H "Content-Type: text/plain"</code></pre>
 
                 <p>The explain API endpoint produces a detailed description of the redaction. The response will include a list of spans that contain the start and stop positions of redacted text and the type of sensitive information that was redacted. Using this information we can compare the redacted information to our annotated file to calculate precision and recall metrics.</p>
 
