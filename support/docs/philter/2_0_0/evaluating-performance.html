@@ -55,7 +55,8 @@ layout: documentation
                 <code>cp /opt/philter/profiles/default.json /opt/philter/profiles/evaluation.json</code>
                 <p>Now open <code>/opt/philter/profiles/evaluation.json</code> in a text editor. (The content of <code>evaluation.json</code> will be similar to what's shown below but may have minor differences between different versions of Philter.)</p>
 
-                <pre>
+{% raw %}
+<pre><code class="json">
 {
   "name": "default",
   "identifiers": {
@@ -76,7 +77,8 @@ layout: documentation
       ]
     }
   }
-}</pre>
+}</code></pre>
+{% endraw %}
 
                 <p>The first thing we need to do is to set the name of the filter profile. Replace <code>default</code> with <code>evaluation</code> and save the file.</p>
 
@@ -89,7 +91,7 @@ layout: documentation
                     <p>Let's say you want to redact bitcoin addresses. The bitcoin address filter is not in the default filter profile. To add the bitcoin address filter we will refer to Philter's documentation on the bitcoin address filter, get the configuration, and copy it into the filter profile.</p>
                     <p>From the bitcoin address filter documentation we see the configuration for the bitcoin address filter is:</p>
 
-<pre>
+                {% raw %}<pre><code class="json">
       "bitcoinAddress": {
          "bitcoinAddressFilterStrategies": [
             {
@@ -98,11 +100,11 @@ layout: documentation
             }
          ]
       }
-</pre>
+                </code></pre>{% endraw %}
 
                 <p>We can copy this configuration and paste it into our filter profile:</p>
 
-<pre>
+                {% raw %}<pre><code class="json">
 {
    "name": "evaluation",
    "identifiers": {
@@ -132,7 +134,7 @@ layout: documentation
       }
    }
 }
-</pre>
+            </code></pre>{% endraw %}
 
                 <div class="isa_info">
                     <p><i class="fa fa-info-circle"></i> The order of the filters in the filter profile does not matter and has no impact on performance. We typically place the filters in the filter profile alphabetically just to improve readability.</p>
