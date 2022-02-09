@@ -5,6 +5,8 @@ layout: post
 categories:
   - philter
   - java
+  - aws
+  - kinesis
 redirect_from: /blog/aws-firehose-transformations-streaming-philter/
 ---
 
