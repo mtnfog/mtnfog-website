@@ -16,9 +16,9 @@ In some cases you may need to manipulate the data as it goes through the firehos
 
 ## Prerequisites
 
-Your must have a running instance of Philter. If you don't already have a running instance of Philter you can launch one through the AWS Marketplace or as a container. There are CloudFormation and Terraform scripts for launching a single instance of Philter or a load-balanced auto-scaled set of Philter instances.
+Your must have a running instance of Philter. (You can launch an instance through the [AWS Marketplace](https://aws.amazon.com/marketplace/pp/B07YVB8FFT?ref=_ptnr_mf_launch).)
 
-It's not required that the instance of Philter be running in AWS but it is required that the instance of Philter be accessible from your AWS Lambda function. Running Philter and your AWS Lambda function in your own VPC allows you to communicate locally with Philter from the function.
+It's not required that the instance of Philter be running in AWS but it is required that the instance of Philter be accessible from your AWS Lambda function. Running Philter and your AWS Lambda function in your own VPC allows your Lambda function to communicate with Philter within the VPC.
 
 ## Setting up the AWS Kinesis Firehose Transformation
 
