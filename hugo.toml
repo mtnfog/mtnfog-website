@@ -3,9 +3,15 @@ locale = "en-us"
 title = "Mountain Fog"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
+googleAnalytics = "G-8W6YT63JBS"
+
+[services.googleAnalytics]
+  ID = "G-8W6YT63JBS"
 
 [params]
   description = "Professional services for cloud, big-data, and NLP from AWS and Google Cloud certified architects and engineers."
+  keywords = ["cloud consulting", "AWS consulting", "Google Cloud consulting", "big data", "natural language processing", "NLP", "machine learning", "Apache NiFi", "Apache Kafka", "Apache OpenNLP", "Amazon SageMaker", "Google Vertex AI", "data pipelines", "AWS Marketplace", "GCP Marketplace", "PCI-DSS", "HIPAA", "Mountain Fog"]
+  ogImage = "img/image_a.png"
   linkedin = "https://www.linkedin.com/company/mtnfog"
   github = "https://github.com/mtnfog"
   email = "hi@mtnfog.com"
