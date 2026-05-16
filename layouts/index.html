@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>Professional services for cloud, big-data, and NLP</h1>
+      <p class="lead">Guidance and expertise from AWS and Google Cloud certified architects and engineers for your cloud projects.</p>
+      <p><a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSetTYsJS4pSbMXSb2rMMnfly1-LX4ZgcUnaxcQaXqYY14ctFw/viewform" rel="noopener">Start a conversation</a></p>
+      <p><a class="linkedin-link" href="{{ .Site.Params.linkedin }}" rel="noopener">Connect with us on LinkedIn &rarr;</a></p>
+    </div>
+    <div class="hero-image">
+      <img src="{{ "img/image_a.png" | relURL }}" alt="Cloud computing illustration">
+    </div>
+  </div>
+</section>
+
+{{ .Content }}
+
+<section class="section section-alt" id="contact">
+  <div class="container cta">
+    <h2>Let's start a conversation</h2>
+    <p>Whether you have a question or a project to discuss, we'd love to hear from you. Reach out and we'll get back to you shortly.</p>
+    <p>
+      <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSetTYsJS4pSbMXSb2rMMnfly1-LX4ZgcUnaxcQaXqYY14ctFw/viewform" rel="noopener">Contact Us</a>
+    </p>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,5 @@
+<section{{ with .Get "id" }} id="{{ . }}"{{ end }} class="section{{ if eq (.Get "alt") "true" }} section-alt{{ end }}">
+  <div class="container{{ if eq (.Get "width") "narrow" }} prose{{ end }}">
+    {{ .Inner }}
+  </div>
+</section>

@@ -1,0 +1,25 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <h4>Mountain Fog, Inc.</h4>
+      <p>{{ .Site.Params.addressLine1 }}<br>{{ .Site.Params.addressLine2 }}</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>
+        <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a><br>
+        {{ .Site.Params.phone }}
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <p>
+        <a href="{{ .Site.Params.linkedin }}" rel="noopener">LinkedIn</a><br>
+        <a href="{{ .Site.Params.github }}" rel="noopener">GitHub</a>
+      </p>
+    </div>
+  </div>
+  <div class="container footer-base">
+    <small>&copy; {{ now.Year }} {{ .Site.Params.copyright }} All rights reserved.</small>
+  </div>
+</footer>

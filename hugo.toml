@@ -1,0 +1,33 @@
+baseURL = "https://www.mtnfog.com/"
+locale = "en-us"
+title = "Mountain Fog"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Professional services for cloud, big-data, and NLP from AWS and Google Cloud certified architects and engineers."
+  linkedin = "https://www.linkedin.com/company/mtnfog"
+  github = "https://github.com/mtnfog"
+  email = "hi@mtnfog.com"
+  phone = "304-919-2800"
+  fax = "412-535-5165"
+  addressLine1 = "206 American Way, Suite 2"
+  addressLine2 = "Weirton, WV 26062, USA"
+  copyright = "Mountain Fog, Inc."
+
+[menu]
+  [[menu.main]]
+    name = "Services"
+    url = "/#services"
+    weight = 10
+  [[menu.main]]
+    name = "About"
+    url = "/#about"
+    weight = 20
+  [[menu.main]]
+    name = "Contact"
+    url = "/#contact"
+    weight = 30
+
+[markup.goldmark.renderer]
+  unsafe = true
